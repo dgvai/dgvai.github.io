@@ -484,7 +484,7 @@ section + section {
 }
 
 .news-date {
-  font-size: 0.6875rem; /* 11px */
+  font-size: 0.75rem; /* 12px */
   font-weight: 500;
   color: var(--faint);
   font-variant-numeric: tabular-nums;
@@ -492,8 +492,14 @@ section + section {
 }
 
 .news-text {
-  font-size: 0.6875rem; /* 11px */
+  font-size: 0.75rem; /* 12px */
   line-height: 1.6;
+  margin: 0;
+}
+
+/* Several items sharing one date stack in a single row. */
+.news-text + .news-text {
+  margin-top: 6px;
 }
 
 /* Timeline (home education) */
