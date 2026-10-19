@@ -1,4 +1,5 @@
 # Newest first. `date` is shown as written; `text` supports Markdown.
+# Items with the same `date` are grouped into one row on the home page.
 - date: Oct 2026
   text: Gave a guest lecture on Unity GUI to sophomore students at Kennesaw State University. Thanks to my advisor Dr. Yu Zhao for giving me the opportunity.
 - date: Oct 2026
