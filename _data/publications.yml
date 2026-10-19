@@ -6,12 +6,18 @@
 #   title     paper title
 #   authors   list of names; names in profile.yml `highlight_names` are bolded
 #   venue     full conference or journal name
-#   abbr      short badge text (e.g. CVPR); falls back to `type`
 #   year      publication year; the page groups papers by year automatically
 #   type      Conference, Journal, Preprint, ...
 # Optional:
 #   selected: true   also show it on the home page
-#   url, pdf, doi, code, note, bibtex
+#   note      extra text after the venue, e.g. "presented at IEEE ISMAR"
+# Optional links, shown as [WEBSITE] [PDF] [VIDEO] [DATA] [CODE] [DOI] [BIBTEX]:
+#   website   project page URL
+#   pdf       URL, or a file path such as /assets/pdf/paper.pdf
+#   video, data, code   URLs
+#   doi       DOI only, e.g. 10.1109/TVCG.2026.1234567
+#   links     extra links, e.g. [{name: Slides, url: https://...}]
+#   bibtex    citation text; adds a [BIBTEX] toggle
 # List papers newest first within a year.
 
 intro: >-
@@ -23,7 +29,6 @@ papers:
     title: DOTA2 Winner Team Prediction based on Stacked Bidirectional LSTM Network
     authors: [J. Uddin, I. Fahmida, S. I. Moyeen, M. Mehedi Hasan]
     venue: 2022 4th International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)
-    abbr: ICECTE
     year: 2022
     type: Conference
     selected: true
@@ -39,7 +44,6 @@ papers:
     title: An Intelligent Industrial Safety and Health Monitoring System for Industry 4.0
     authors: [P. Das, S. H. Abhi, F. I. Z. Sureed, J. Uddin, S. Jahan, R. Zaman, M. A. K. Niloy]
     venue: 2022 International Conference on Mechanical, Industrial and Energy Engineering (ICMIEE)
-    abbr: ICMIEE
     year: 2022
     type: Conference
     selected: true
@@ -55,7 +59,6 @@ papers:
     title: Performance Evaluation of Navigation Schemes for Autonomous Exploration of a Secondary Explorer Rover in a Martian Lava Cave
     authors: [A. Mazumder, M. A. K. Niloy, M. F. Shahed, Z. A. Madiha, F. R. Badal, J. Uddin, M. Z. Hossain]
     venue: 2022 IEEE Region 10 Symposium (TENSYMP)
-    abbr: TENSYMP
     year: 2022
     type: Conference
     selected: true
