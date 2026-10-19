@@ -484,16 +484,16 @@ section + section {
 }
 
 .news-date {
-  font-size: 0.8rem;
+  font-size: 0.6875rem; /* 11px */
   font-weight: 500;
   color: var(--faint);
   font-variant-numeric: tabular-nums;
-  padding-top: 2px;
+  line-height: 1.6;
 }
 
 .news-text {
-  font-size: 0.92rem;
-  line-height: 1.55;
+  font-size: 0.6875rem; /* 11px */
+  line-height: 1.6;
 }
 
 /* Timeline (home education) */
