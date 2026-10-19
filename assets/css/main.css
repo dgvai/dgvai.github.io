@@ -529,16 +529,16 @@ section + section {
 
 .pub-title {
   font-family: var(--font-sans);
-  font-size: 0.9375rem; /* 15px */
+  font-size: 0.75rem; /* 12px */
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.4;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .pub-authors,
 .pub-venue {
-  font-size: 0.8125rem; /* 13px */
+  font-size: 0.6875rem; /* 11px */
   line-height: 1.5;
   color: var(--muted);
   margin: 0;
@@ -553,8 +553,8 @@ section + section {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 14px;
-  margin-top: 6px;
-  font-size: 0.75rem; /* 12px */
+  margin-top: 4px;
+  font-size: 0.6875rem; /* 11px */
   font-weight: 500;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -581,7 +581,7 @@ section + section {
   padding: 12px 14px;
   overflow-x: auto;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.6875rem; /* 11px */
   line-height: 1.55;
   background: var(--badge-bg);
   border-radius: 8px;
