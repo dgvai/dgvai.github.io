@@ -329,24 +329,6 @@ section + section {
   background: var(--badge-bg);
 }
 
-.chip {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 1px 10px;
-  cursor: pointer;
-  list-style: none;
-}
-
-.chip:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-  text-decoration: none;
-}
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -537,10 +519,7 @@ section + section {
    Publications
    --------------------------------------------------------------- */
 .pub {
-  display: grid;
-  grid-template-columns: 84px minmax(0, 1fr);
-  gap: 20px;
-  padding: 20px 0;
+  padding: 16px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -548,35 +527,19 @@ section + section {
   border-bottom: 0;
 }
 
-.pub-badge {
-  align-self: start;
-  text-align: center;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border-radius: 6px;
-  padding: 4px 6px;
-  margin-top: 3px;
-}
-
 .pub-title {
   font-family: var(--font-sans);
-  font-size: 1.02rem;
+  font-size: 0.9375rem; /* 15px */
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1.45;
+  line-height: 1.4;
   margin-bottom: 4px;
-}
-
-.pub-title a {
-  color: var(--text);
 }
 
 .pub-authors,
 .pub-venue {
-  font-size: 0.93rem;
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.5;
   color: var(--muted);
   margin: 0;
 }
@@ -589,24 +552,36 @@ section + section {
 .pub-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 4px 14px;
+  margin-top: 6px;
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.bib {
-  flex-basis: 100%;
+.pub-bib-toggle {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
-.bib summary::-webkit-details-marker {
-  display: none;
+.pub-bib-toggle:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
-.bib pre {
+.pub-bib {
   margin: 10px 0 0;
-  padding: 14px 16px;
+  padding: 12px 14px;
   overflow-x: auto;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   line-height: 1.55;
   background: var(--badge-bg);
   border-radius: 8px;
@@ -977,15 +952,6 @@ section + section {
   .timeline li {
     grid-template-columns: minmax(0, 1fr);
     gap: 2px;
-  }
-
-  .pub {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 8px;
-  }
-
-  .pub-badge {
-    justify-self: start;
   }
 
   .card-grid,

@@ -15,3 +15,16 @@
   var button = document.querySelector("[data-print]");
   if (button) button.addEventListener("click", function () { window.print(); });
 })();
+
+// Publications: [BibTeX] shows or hides the citation block under the links.
+(function () {
+  document.querySelectorAll(".pub-bib-toggle").forEach(function (button) {
+    var block = document.getElementById(button.getAttribute("aria-controls"));
+    if (!block) return;
+    button.addEventListener("click", function () {
+      var open = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!open));
+      block.hidden = open;
+    });
+  });
+})();
