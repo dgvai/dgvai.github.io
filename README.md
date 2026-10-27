@@ -20,6 +20,8 @@ Almost everything lives in `_data/`:
 
 The Projects and CV pages (`projects.html`, `cv.html`) are hidden for now with `published: false`. To bring one back, remove that line and add the page to the nav list in `_includes/header.html`.
 
+Paper PDFs go in `assets/pdf/`. Name each file after the paper's `key` and set `pdf: <key>.pdf` on that paper in `publications.yml`.
+
 Styles are in `assets/css/main.css`.
 
 ## Running locally
