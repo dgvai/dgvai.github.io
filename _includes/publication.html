@@ -18,7 +18,16 @@
     <div class="pub-links">
       {%- if website -%}<a href="{{ website }}">[Website]</a>{%- endif -%}
       {%- if pub.pdf -%}
-        <a href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ pub.pdf | relative_url }}{% endif %}">[PDF]</a>
+        {%- comment -%} A full URL, a site path ("/..."), or a file name in assets/pdf/. {%- endcomment -%}
+        {%- assign first_char = pub.pdf | slice: 0 -%}
+        {%- if pub.pdf contains "://" -%}
+          {%- assign pdf_href = pub.pdf -%}
+        {%- elsif first_char == "/" -%}
+          {%- assign pdf_href = pub.pdf | relative_url -%}
+        {%- else -%}
+          {%- assign pdf_href = "/assets/pdf/" | append: pub.pdf | relative_url -%}
+        {%- endif -%}
+        <a href="{{ pdf_href }}">[PDF]</a>
       {%- endif -%}
       {%- if pub.video -%}<a href="{{ pub.video }}">[Video]</a>{%- endif -%}
       {%- if pub.data -%}<a href="{{ pub.data }}">[Data]</a>{%- endif -%}

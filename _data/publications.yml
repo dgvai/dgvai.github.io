@@ -13,7 +13,7 @@
 #   note      extra text after the venue, e.g. "presented at IEEE ISMAR"
 # Optional links, shown as [WEBSITE] [PDF] [VIDEO] [DATA] [CODE] [DOI] [BIBTEX]:
 #   website   project page URL
-#   pdf       URL, or a file path such as /assets/pdf/paper.pdf
+#   pdf       file name of a PDF in assets/pdf/ (e.g. smith2024title.pdf), or a full URL
 #   video, data, code   URLs
 #   doi       DOI only, e.g. 10.1109/TVCG.2026.1234567
 #   links     extra links, e.g. [{name: Slides, url: https://...}]
@@ -32,6 +32,7 @@ papers:
     year: 2022
     type: Conference
     selected: true
+    pdf: uddin2022dota2.pdf
     bibtex: |
       @inproceedings{uddin2022dota2,
         title     = {DOTA2 Winner Team Prediction based on Stacked Bidirectional LSTM Network},
@@ -62,6 +63,7 @@ papers:
     year: 2022
     type: Conference
     selected: true
+    pdf: mazumder2022navigation.pdf
     bibtex: |
       @inproceedings{mazumder2022navigation,
         title     = {Performance Evaluation of Navigation Schemes for Autonomous Exploration of a Secondary Explorer Rover in a Martian Lava Cave},
