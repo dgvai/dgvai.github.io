@@ -25,6 +25,22 @@ intro: >-
   [Google Scholar](https://scholar.google.com/citations?user=UM6hcO0AAAAJ).
 
 papers:
+  - key: uddin2026hazard
+    title: A Real-time VLM Framework for Hazard Inference in Home Environment for Mixed Reality Systems
+    authors: [J. Uddin, M. C. Osborne, A. Garefino, L. Zhang, Y. Zhao]
+    venue: 2026 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)
+    year: 2026
+    type: Conference
+    selected: true
+    pdf: uddin2026hazard.pdf
+    bibtex: |
+      @inproceedings{uddin2026hazard,
+        title     = {A Real-time VLM Framework for Hazard Inference in Home Environment for Mixed Reality Systems},
+        author    = {Uddin, J. and Osborne, M. C. and Garefino, A. and Zhang, L. and Zhao, Y.},
+        booktitle = {2026 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)},
+        year      = {2026}
+      }
+
   - key: uddin2022dota2
     title: DOTA2 Winner Team Prediction based on Stacked Bidirectional LSTM Network
     authors: [J. Uddin, I. Fahmida, S. I. Moyeen, M. Mehedi Hasan]
